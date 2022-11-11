@@ -10,17 +10,14 @@ import Crown from '../../img/crown.png'
 import GlassesEmoji from '../../img/glassesimoji.png'
 import FloatingDiv from '../FloatingDiv/FloatingDiv'
 
-function Intro() {
+function Intro({pStart , pEnd}) {
   return (
     <div className="intro">
         <div className="i-left">
             <div className="i-name">
-                <span>His name is </span>
+                <span>Hi I am</span>
                 <span>Adwaith!</span>
-                <span>Self Taught MERN STACK developer ,
-                    Spends most of his time starring at the errors caused by some missing semicolons or typo. 
-                    Just kidding! , He knows how to code.
-                </span>
+                <span className='p-tag'>{pStart} <span className='intro-txt' >Self taught MERN stack developer who spends most of his time staring at the code and now you are staring at the Adwaith's portfolio made using React. </span> <span className='p-tag'>{pEnd}</span></span>
             </div>
             <button className=" button i-button">Hire Me</button>
             <div className="i-icons">
@@ -35,14 +32,14 @@ function Intro() {
            <img src="" alt="" />
            <img src={GlassesEmoji} alt="" />
            <div className="floating-box1">
-            <FloatingDiv crownImage={Crown} txt1='MERN' txt2='stack' />
+            <FloatingDiv crownImage={Crown} txt1='MERN ' txt2='stack' />
            </div>
            <div className="floating-box2">
-           <FloatingDiv crownImage={Thumbup} txt1='Self' txt2='taught' />
+           <FloatingDiv crownImage={Thumbup} txt1='Self ' txt2='taught' />
            </div>
            {/* blur div */}
            <div className="blur" style={{background: 'rgba(238, 210, 255,0.8)'}}></div>
-           <div className="blur" style={{background: '#c1f5ff', top: '17rem', left:'-18%' }}></div>
+           <div className="blur" style={{background: '#c1f5ff', top: '5rem', left:'-18%' }}></div>
         </div>
     </div>
   )

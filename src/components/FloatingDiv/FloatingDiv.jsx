@@ -6,7 +6,7 @@ function FloatingDiv({crownImage,txt1,txt2}) {
     <div className="floatingdiv">
         <img src={crownImage} alt="" />
         <span>
-            {txt1} <br />
+            {txt1}
             {txt2}
         </span>
     </div>
